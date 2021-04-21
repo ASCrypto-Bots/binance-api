@@ -1,0 +1,42 @@
+{
+  "name": "binance-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "babel-node src/app.js",
+    "dev": "nodemon src/app.js --exec babel-node",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "await-to-js": "^2.1.1",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "googleapis": "^52.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "morgan": "^1.10.0",
+    "node-binance-api": "^0.12.5",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "uuid": "^8.1.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "eslint": "^7.1.0"
+  }
+}

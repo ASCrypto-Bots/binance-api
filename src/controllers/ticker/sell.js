@@ -13,10 +13,12 @@ export default async(req, res) => {
                 error: error 
             });
         }
-        fs.appendFile('movements.txt', `Sell ${quantity} ${symbol} at ${price}\r\n`, function (err) {
-            if (err) throw err;
-                console.log('Saved!');
-        });  
+        else {
+            fs.appendFile('movements.txt', `Sell ${quantity} ${symbol} at ${price}\r\n`, function (err) {
+                if (err) throw err;
+                    console.log('Saved!');
+            });
+        } 
         res.send(response);
     }catch(e){
         console.log(e.message);   
